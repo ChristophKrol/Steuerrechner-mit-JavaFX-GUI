@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.GaussianBlur?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="757.0" prefWidth="1344.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.steuerrechner.demo.GUIController">
+   <children>
+      <ImageView fitHeight="757.0" fitWidth="1354.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../images/background.jpg" />
+         </image>
+         <effect>
+            <GaussianBlur radius="7.41" />
+         </effect>
+      </ImageView>
+      <AnchorPane layoutX="221.0" layoutY="253.0" prefHeight="251.0" prefWidth="903.0">
+         <children>
+            <AnchorPane layoutX="248.0" layoutY="26.0" prefHeight="200.0" prefWidth="407.0">
+               <children>
+                  <Label fx:id="entryLabel" layoutX="118.0" layoutY="14.0" prefHeight="39.0" prefWidth="171.0" text="Gib dein Bruttoeinkommen ein" textAlignment="CENTER" textFill="#e4dfdf" />
+                  <TextField fx:id="incomeInput" layoutX="129.0" layoutY="75.0" onAction="#checkSteuertarif" />
+                  <Button fx:id="berechnungStarten" layoutX="145.0" layoutY="118.0" mnemonicParsing="false" onAction="#checkSteuertarif" prefHeight="25.0" prefWidth="117.0" text="Berechung starten" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
